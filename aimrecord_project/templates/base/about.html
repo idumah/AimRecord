@@ -1,5 +1,114 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>This application is dedicated to Paradox Arrows championship</h1>
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+            <!-- Заголовок с иконкой -->
+            <h1 class="display-4 mb-4">
+                <i class="fas fa-bullseye text-success me-2"></i>
+                Paradox Arrows Championship
+            </h1>
+
+            <!-- Описание проекта -->
+            <div class="card shadow-sm mb-5">
+                <div class="card-body p-4">
+                    <p class="lead">
+                        Профессиональная система учета результатов для турниров по стрельбе из лука
+                    </p>
+                    <hr class="my-4">
+                    <p>
+                        Наш проект создан для организации и автоматизации проведения чемпионатов Paradox Arrows.
+                        Мы предоставляем удобные инструменты для судей, участников и зрителей.
+                    </p>
+                    <p>
+                        Система позволяет в реальном времени отслеживать результаты, формировать турнирные таблицы
+                        и анализировать статистику выступлений.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Особенности -->
+            <h3 class="mb-4">
+                <i class="fas fa-star text-warning me-2"></i>
+                Ключевые особенности
+            </h3>
+            <div class="row g-4 mb-5">
+                <div class="col-md-4">
+                    <div class="feature-card p-3 h-100">
+                        <i class="fas fa-clock fa-2x text-primary mb-3"></i>
+                        <h4>Реальное время</h4>
+                        <p>Мгновенное обновление результатов во время соревнований</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card p-3 h-100">
+                        <i class="fas fa-chart-line fa-2x text-success mb-3"></i>
+                        <h4>Аналитика</h4>
+                        <p>Детальная статистика и графики выступлений</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card p-3 h-100">
+                        <i class="fas fa-mobile-alt fa-2x text-info mb-3"></i>
+                        <h4>Мобильность</h4>
+                        <p>Полная адаптация для мобильных устройств</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Социальные сети -->
+            <h3 class="mb-4">
+                <i class="fas fa-hashtag text-primary me-2"></i>
+                Мы в социальных сетях
+            </h3>
+            <div class="social-links d-flex justify-content-center gap-3 mb-5">
+                <a href="#" class="btn btn-outline-primary btn-lg rounded-circle">
+                    <i class="fab fa-vk"></i>
+                </a>
+                <a href="#" class="btn btn-outline-info btn-lg rounded-circle">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="#" class="btn btn-outline-danger btn-lg rounded-circle">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" class="btn btn-outline-dark btn-lg rounded-circle">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+
+            <!-- Контакты -->
+            <div class="card border-success">
+                <div class="card-header bg-success text-white">
+                    <i class="fas fa-envelope me-2"></i>
+                    Контактная информация
+                </div>
+                <div class="card-body">
+                    <p class="mb-1"><strong>Email:</strong> info@paradox-arrows.com</p>
+                    <p class="mb-1"><strong>Телефон:</strong> +7 (XXX) XXX-XX-XX</p>
+                    <p><strong>Адрес:</strong> г. Москва, ул. Спортивная, 15</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .feature-card {
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+    .feature-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .social-links a {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
 {% endblock %}

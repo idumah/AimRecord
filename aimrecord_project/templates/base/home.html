@@ -4,12 +4,14 @@
 <div class="container">
     <h1 class="my-4" style="color: #2e7d32;">Список соревнований</h1>
 
+    {% if user.profile.verified %}
     <!-- Добавленная кнопка -->
     <div class="mb-4">
         <a href="#" class="btn btn-green" style="text-decoration: none;">
             <i class="fas fa-plus"></i> Создать соревнование
         </a>
     </div>
+    {% endif %}
 
     <style>
         .competition-card {
